@@ -1,0 +1,24 @@
+{
+  "name": "el-diario-fintech",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otonielcarlos/edf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otonielcarlos/edf/issues"
+  },
+  "homepage": "https://github.com/otonielcarlos/edf#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.15.3",
+    "gzippo": "^0.2.0",
+    "morgan": "^1.8.2"
+  }
+}
