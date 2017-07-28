@@ -22,11 +22,11 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 
 app.controller("MainCtrl", ["$scope", function ($scope) {
-//    $scope.test = "éxito!"
+    $scope.test = ""
 }]);
 app.controller("contactCtrl", ["$scope", function ($scope) {
-//    $scope.test = "éxito2!"
+    $scope.test = ""
 }]);
 app.controller("aboutCtrl", ["$scope", function ($scope) {
-//    $scope.test = "éxito3!"
+    $scope.test = ""
 }]);
