@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="elDiarioFintech">
 
 <head>
 
@@ -45,20 +45,20 @@
                     <span class="sr-only"></span>
                    <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">El Diario FinTech</a>
+                <a class="navbar-brand" href="#/">El Diario FinTech</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Inicio</a>
+                        <a href="#/">Inicio</a>
                     </li>
                     <li>
-                        <a href="about.html">¿Qué Hacemos?</a>
+                        <a href="#/conocenos">¿Qué Hacemos?</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contacto</a>
+                        <a href="#/contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -68,53 +68,7 @@
     </nav>
 
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>El Diario FinTech</h1>
-                        <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-                </div>
-
-                <hr>
-                <!-- Pager -->
-                <!--
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
--->
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <br>
-
+    <div ng-view></div>
 
     <!-- Footer -->
     <footer style="">
@@ -123,7 +77,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
 
-                         <li>
+                        <li>
                             <a href="mailto:contacto@eldiariofintech.com">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -139,6 +93,12 @@
         </div>
     </footer>
 
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src=" //code.angularjs.org/1.4.5/angular-route.js"></script>
+    <script src="app.js"></script>
+
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -150,7 +110,6 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-
     <script src="js/clean-blog.min.js"></script>
 
     <!-- Google Analytics -->
@@ -169,6 +128,7 @@
 
         ga('create', 'UA-103586497-1', 'auto');
         ga('send', 'pageview');
+
     </script>
 
 </body>
