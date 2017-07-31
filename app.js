@@ -13,8 +13,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         controller: 'aboutCtrl'
 
     }).when('/contacto', {
-        templateUrl: 'contact.html',
-        controller: 'contactCtrl'
+        templateUrl: 'contact.html'
 
     })
 
@@ -27,6 +26,4 @@ app.controller("MainCtrl", ["$scope", function ($scope) {
 app.controller("contactCtrl", ["$scope", function ($scope) {
     $scope.test = ""
 }]);
-app.controller("aboutCtrl", ["$scope", function ($scope) {
-    $scope.test = ""
-}]);
+
