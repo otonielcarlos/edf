@@ -7,10 +7,9 @@ app.config(['$locationProvider', function ($locationProvider) {
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when("/", {
         templateUrl: 'home.html',
-        controller: 'MainCtrl'
+
     }).when('/conocenos', {
         templateUrl: 'about.html',
-        controller: 'aboutCtrl'
 
     }).when('/contacto', {
         templateUrl: 'contact.html'
@@ -18,12 +17,3 @@ app.config(['$routeProvider', function ($routeProvider) {
     })
 
 }])
-
-
-app.controller("MainCtrl", ["$scope", function ($scope) {
-    $scope.test = ""
-}]);
-app.controller("contactCtrl", ["$scope", function ($scope) {
-    $scope.test = ""
-}]);
-
